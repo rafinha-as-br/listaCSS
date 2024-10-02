@@ -13,4 +13,4 @@ id: seletor por identificador único, permite identificar ou especificar unicame
 <\style>
 <body>
     <p id="p01"> Lorem <\p>
-<\body>
+<\body> 

@@ -8,6 +8,6 @@ seletor{
 
 Exemplo de regra CSS que define todos os elementos H1 da página:
 
-h1{
+h1{ 
     propriedade:valor
 }

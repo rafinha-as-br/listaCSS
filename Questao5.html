@@ -15,14 +15,14 @@
      </head>
      <body>   
         <ol>
-        <!--item 1--> <li id="lip0">Abacaxi</li>
-        <!--item 2--> <li           class="fruta">Melão</li>
-        <!--item 3--> <li id="lip2" class="fruta">Pera</li>
-        <!--item 4--> <li id="lip3" class="fruta">Uva</li>
-        <!--item 5--> <li id="lip4" cls=as"fruta">Maçã</li>
-        <!--item 6--> <li           class="churras">Carne</li>
-        <!--item 7--> <li           class="churras">Linguiça</li>
-        <!--item 8--> <li id="lip7" class="churras" draggable="true">Pão de alho</li>
+        <!--item 1--> <li id="lip0">Abacaxi - A cor esta declarada no seletor por elemento da regra 1 e não há seletor para o id</li>
+        <!--item 2--> <li           class="fruta">Melão - gray pois o seletor por classe é o mais específico que o seletor por elemento definido na regra 1</li>
+        <!--item 3--> <li id="lip2" class="fruta">Pera - tera a cor azul pois o seletor por ir é o mais específico que os seletores por elemento (regra1) e seletor por classe (regra 3)</li>
+        <!--item 4--> <li id="lip3" class="fruta">Uva - Cor laranja definida pela regra 7 pois a combinação dos seletores #lip3 e .fruta formam um seletor mais específico que estes seletores separados</li>
+        <!--item 5--> <li id="lip4" class="fruta">Maçã - cor cinza definida pela regra 3 pois o seletor por classe é mais específico que seletor por elemento da regra 1 e não há uma regra com este seletor #lip4</li>
+        <!--item 6--> <li           class="churras">Carne - tera a cor preta pois segue a regra dos operadores da regra 4</li>
+        <!--item 7--> <li           class="churras">Linguiça tera a cor preta pois segue a regra dos operadores da regra 4</li>
+        <!--item 8--> <li id="lip7" class="churras" draggable="true">Pão de alho - tera a cor magenta pois ele segue a regra 5</li>
         </ol>   
      </body>
      </html>
