@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .mensagem-Container{
+        border: 1px solid grey;
+        border-radius: 9px;
+        font-size: medium;
+        padding: 10px;
+        width: 400px;
+    }
+
+    .PedroSilva{
+        display: grid;
+        grid-template-columns: min-content auto ;
+        align-items: center;
+        border: 1px solid grey;
+        border-radius: 9px;
+
+    }
+
+    .Eu{
+        display: grid;
+        grid-template-columns: auto min-content;
+        align-items: center;
+        border: 1px solid grey;
+        border-radius: 9px;
+        background-color: lightgreen;
+    }
+
+    #avatar{
+        font-size: 40px;
+        width: fit-content;
+    }
+
+    #horaPedro{
+        padding-top: 30px;
+        padding-left: 350px;
+        font-size: small;
+        align-items: end;
+        text-align: right;
+        position: fixed;
+    }
+
+    #horaEu{
+        padding-top: 30px;
+        padding-left: 300px;
+        font-size: small;
+        align-items: end;
+        text-align: right;
+        position: fixed;
+    }
+
+    #pPedro{
+        text-align: left;
+    }
+
+    #pEu{
+        text-align: right;
+    }
+
+    .inputContainer{
+        border: 1px solid grey;
+        border-radius: 9px;
+        padding: 10px;
+        margin-top: 15px;
+        display: grid;
+        
+    }
+
+    #input1{
+        height: 60px;
+    }
+
+    #input2{
+        width: 50px;
+        margin-left: 310px;
+        margin-top: 5px;
+    }
+
+
+</style>
+
+<body>
+    <div class="mensagem-Container">
+        Pedro Silva
+        <div class="PedroSilva">
+            <span id="avatar">👤</span>
+            <p id="pPedro">Olá, tudo bem?</p>
+            <span id="horaPedro">00:50</span>
+        </div>
+        Eu
+        <div class="Eu">
+            <p id="pEu">Estou bem sim, e você?</p>
+            <span id="horaEu">00:55</span>
+            <span id="avatar">👤</span>
+        </div>
+        Pedro Silva
+        <div class="PedroSilva">
+            <span id="avatar">👤</span>
+            <p id="pPedro">Vamos sair hoje? Sabe conversar e Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ducimus</p>
+            <span id="horaPedro">01:01</span>
+        </div>
+        Eu
+        <div class="Eu">
+            <p id="pEu">Criatura.....</p>
+            <span id="horaEu">00:55</span>
+            <span id="avatar">👤</span>
+        </div>
+        <div class="inputContainer">
+            <input id="input1" type="text">
+            <input id="input2" type="button" value="enviar">
+            
+        </div>
+    </div>
+</body>
+</html>
