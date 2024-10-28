@@ -6,7 +6,60 @@
     <title>Document</title>
 </head>
 <style>
-    .mensagem-Container{
+    *{margin: 0;}
+    body{
+        display: grid;
+        gap: 20px;
+    }
+    #png0{
+        width: 150px;
+    }
+    #png1{
+        width: 300px;
+    }
+    #png2{
+        width: 300px;
+    }
+
+    .menu{
+        display: grid;
+        grid-template-columns: min-content min-content;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .items3{
+        display: grid;
+        grid-template-columns: min-content min-content min-content;
+        gap: 15px;
+        align-items: end;
+    }
+
+    .main{
+        display: grid;
+        grid-template-rows: min-content min-content;
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 15px;
+    }
+    .window{
+        background-color:antiquewhite;
+        border-radius: 30px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 15px;
+        gap: 5px;
+    }
+    span{
+        padding-bottom: 5px;
+    }
+
+/*  */
+
+.mensagem-Container{
         border: 1px solid grey;
         border-radius: 9px;
         font-size: medium;
@@ -14,6 +67,10 @@
         width: 400px;
         overflow: scroll;
         overflow-x: hidden;
+        position: absolute;
+        background-color: white;
+        right: 15px;
+        bottom: -200px;
     }
 
     .PedroSilva{
@@ -22,7 +79,6 @@
         align-items: center;
         border: 1px solid grey;
         border-radius: 9px;
-
     }
 
     .Eu{
@@ -45,7 +101,7 @@
         font-size: small;
         align-items: end;
         text-align: right;
-        position: fixed;
+        position: absolute;
     }
 
     #horaEu{
@@ -54,7 +110,7 @@
         font-size: small;
         align-items: end;
         text-align: right;
-        position: fixed;
+        position: absolute;
     }
 
     #pPedro{
@@ -86,7 +142,30 @@
 
 
 </style>
+<body>
+    <div class="menu">
+        <img id="png0" src="assets/make-a-logo-that-wil-make-you-happy.png">
+        <div class="items3">
+            <a href="">Home</a>
+            <a href="">Sobre</a>
+            <a href="">Contato</a>
+        </div>
 
+    </div>
+    <div class="main">
+        <div class="window">
+            <img id="png1" src="assets/360_F_447677793_qlwuEq0EKegA6J55cIsxr39Ue4dyHIBA.jpg">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolemque, soluta</span>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolemque, soluta</span>
+        </div>
+        <div class="window">
+            <img id="png2" src="assets/pngtree-three-scoops-of-ice-cream-with-sprinkles-png-image_11900864.png">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolemque, soluta</span>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolemque, soluta</span>
+        </div>
+    </div>
+
+    
 <body>
     <div class="mensagem-Container">
         Pedro Silva
